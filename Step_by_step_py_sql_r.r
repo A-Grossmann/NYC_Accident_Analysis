@@ -125,7 +125,7 @@
         #IN SQL
 
         # CREATE TABLE xyz_severity AS 
-        # SELECT Latitude, Longitude, 
+        # SELECT Latitude, Longitude, COLLISION_ID
         # NUMBER_OF_PERSONS_INJURED as injured, 
         # NUMBER_OF_PERSONS_KILLED as killed,
         # NUMBER_OF_PEDESTRIANS_INJURED + NUMBER_OF_PEDESTRIANS_KILLED as pedestrians,
