@@ -356,4 +356,108 @@
         #A.) Go into QGIS and add a csv layer for Alcohol_Involvement using the new Alcohol_Involvement_CRASH_TIME_LON_LAT.csv file
         #    See attached map with layers for locations
 
+#5.)  What types of crashes are the most severe?
 
+    #A Finding the highest severity average.
+
+        #IN SQL:
+
+            #  SELECT * FROM(
+            #  SELECT (c.numb*c.avg_severity)/SUM(c.numb) avg_sev, SUM(c.numb) total, c.factor  FROM (
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(CONTRIBUTING_FACTOR_VEHICLE_1) numb,
+            #  a.COLLISION_ID, a.CONTRIBUTING_FACTOR_VEHICLE_1 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(CONTRIBUTING_FACTOR_VEHICLE_2) numb,
+            #  a.COLLISION_ID, a.CONTRIBUTING_FACTOR_VEHICLE_2 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #   UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(CONTRIBUTING_FACTOR_VEHICLE_3) numb,
+            #  a.COLLISION_ID, a.CONTRIBUTING_FACTOR_VEHICLE_3 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(CONTRIBUTING_FACTOR_VEHICLE_4) numb,
+            #  a.COLLISION_ID, a.CONTRIBUTING_FACTOR_VEHICLE_4 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(CONTRIBUTING_FACTOR_VEHICLE_4) numb,
+            #  a.COLLISION_ID, a.CONTRIBUTING_FACTOR_VEHICLE_5 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  ) c
+            # GROUP BY factor) d
+            # WHERE d.total>5
+            # ORDER BY avg_sev DESC
+            #  ;
+
+    #B Finding highest average severity in combining class
+
+        #In SQL:
+
+            # SELECT (a.numb*a.avg_severity)/SUM(a.numb) avg_sev, a.factor, b.discription_of_class 
+            # FROM (
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(class_1) numb,
+            #  a.COLLISION_ID, a.class_1 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(class_2) numb,
+            #  a.COLLISION_ID, a.class_2 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #   UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(class_3) numb,
+            #  a.COLLISION_ID, a.class_3 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            # UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(class_4) numb,
+            #  a.COLLISION_ID, a.class_4 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  UNION
+            #  SELECT SUM(x.crash_severity)/COUNT(x.crash_severity) avg_severity, COUNT(class_5) numb,
+            #  a.COLLISION_ID, a.class_5 factor
+            #  FROM all_accidents_with_factors a
+            #  JOIN
+            #  xyz_severity x
+            #  ON a.COLLISION_ID = x.COLLISION_ID
+            #  GROUP BY factor
+            #  ) a
+            # JOIN
+            # class_key b
+            # ON
+            # a.factor = b.class 
+            # GROUP BY factor
+            # ORDER BY avg_sev DESC;
