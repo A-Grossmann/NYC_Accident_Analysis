@@ -10,4 +10,4 @@ https://www.kaggle.com/datasets/mysarahmadbhat/nyc-traffic-accidents
 
 4.) When did the Alcohol envolvment happen?
 
-5.) What types of cars were most envolved in the accidents?
+5.) What types of accidents are the most severe? What have the highest average severity rating per accident?
