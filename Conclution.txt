@@ -1,0 +1,94 @@
+Conclusion:
+
+1.) What areas in NYC have the most accidents? Where are the most severe accidents located?
+
+After showing a heatmap of the severity and frequency of accidents various areas of danger arrose.
+
+Servere Crash sites in Brooklyn:
+
+-Along Pennsilvainia avenue by the junction of Jamaica Ave and Jackie Robinson Expressway 
+-Belt Parkway and bay parkway near Coney Island where some pedestrians were killed aswell
+-Tillary and Jay street or Jay street and flatbush Brooklyn Heights saw a significant amount of crashes
+-Along Flushing street east of the BQE
+-Along Rockaway BLV near Linden Blv
+-Along Bushwick ave just north of Flushing ave
+-Along Broadway in between Linden and Lorimer a significant amount of pedestrians were hit
+- Atlantic and 3rd ave and the sourounding blocks along Atlantic showed significant pedestrian accidents
+
+Severe Crash sites in Queens:
+
+-Grand Central Parkway between 33rd street and 45th street
+-Long Island Expressway and Queens Bulavard junction
+-Pedestrians and Cyclists Along Rosevelt Avenue most of queens
+-Along Rockaway Boulavard in most of queens
+-Near Belmont Park and Queens Village
+-Pedestrians on Jamaica Ave in Jamaica, Queens
+-Pedestrians on Liberty Ave in most of Queens
+-Pedestrians in Flushing
+
+Severe Crash Sights in Manhattan:
+
+-Between W 42nd and W 43rd street along 8th ave and down 43rd toward 7th ave
+-Area surrounding Park ave tunnel
+
+Severe Crash sights in the Bronx:
+
+-Along W 125th between Malcome X and Madison
+-East 144 between Morris Ave and Waltson
+-Throughout the Cross Bronx Expressway
+-major Deegan Expressway and West 230th
+-All along White Plains Road
+-West chester Ave and Cross Bronx Expressway
+-Surronding blocks of Menroe and east 175th
+
+Severe/Moderate severity crash sites in Staten Island
+
+-Richmond Ave outside Staten Island Mall
+- By BQE and Victory Boulavard Junction
+
+2.) What are the causes of most accidents? Can the contributing factors for the vehicles be classified?
+
+	The top 5 sources/causes of the accidents include:
+		1.) Driver Inattention/Distraction
+		2.) Following Too Closely
+		3.) Failure to Yield Right−of−Way
+		4.) Passing or Lane Usage Improper
+		5.) Backing Unsafely
+
+	When put into 5 classification groups the top 5 order causes was:
+		1.)Driving Mannurism (Following too closely, Speeding, Passing without blinker...)
+		2.)Distraction (Texting, eating,...)
+		3.)Condition/Illness (poor sight, medical emergency...)
+		4.)Bad Road Conditions (potholes, raining/weather, road debre...)
+		5.)Malfunctions (bad breaks, bad lights...)
+	
+	It is obvious that disraction is the biggest cause of accidents even though it may not be the deadliest.
+	Driving Mannurisms as a classification overall cause the most accidents.  I wonder
+	if this is true in other cities than NYC?	 
+
+
+3.) What time of day do the accidents occur and where?
+	Its no suprise that the histogram shows that most traffic accidents occur between the hours of 
+	7am - 11am and 2pm - 8pm (rush hour). Peaking around 2pm -5pm
+
+4.) When did the Alcohol envolvment happen?
+	The time of day that it is shown that Alcohol envolment rises from 6pm peaking at midnight thn tapers
+	off untill 6am as seen on the histogram
+
+5.) What types of cars were most envolved in the accidents?
+	The accidents with the highest on average severity for those envolved were:
+	1.) Illness
+	2.) Unsafe Speed
+	3.) Alcohol Involvement
+	4.) Obstruction/Debris
+	5.) Passanger Distraction
+	
+	When using the 5 classifications for the different common factors we get the
+	severity is rated like the following:
+	1.) Person of Illness
+	2.) Malfunctions
+	3.) Driving Mannurisms
+ 	4.) Distraction
+	5.) Bad Road Conditions
+
+
