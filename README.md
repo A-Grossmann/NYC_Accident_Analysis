@@ -7,3 +7,7 @@ https://www.kaggle.com/datasets/mysarahmadbhat/nyc-traffic-accidents
 2.) What are the causes of most accidents? Can the contributing factors for the vehicles be classified?
 
 3.) What time of day do the accidents occur and where?
+
+4.) When did the Alcohol envolvment happen?
+
+5.) What types of cars were most envolved in the accidents?
