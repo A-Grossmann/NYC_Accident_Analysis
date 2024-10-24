@@ -18,7 +18,7 @@ https://www.kaggle.com/datasets/mysarahmadbhat/nyc-traffic-accidents
 **Results and Outcomes:**
 
 Markdown
-![Image Description](all_accidents_map.pdf)
+![Image Description](crash distribution map.PNG)
 
 **Challenges and Lessons Learned:**
 
